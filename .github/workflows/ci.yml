@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          app2-layered
+          cd app2-layered
           pip install flask pytest
 
       - name: Run tests
