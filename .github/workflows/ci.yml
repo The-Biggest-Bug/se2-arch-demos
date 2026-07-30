@@ -28,4 +28,4 @@ jobs:
       - name: Run tests
         run: |
           cd app2-layered
-          test_tasks.py -v
+          run test_tasks.py -v
