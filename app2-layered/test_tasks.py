@@ -9,6 +9,12 @@ def test_task_factory_creates_task():
     assert task.priority == "high"
     assert task.done == False
 
+def test_task_being_done():
+    task = TaskFactory.create("Make task", "low")
+    assert task.title == "Make task"
+    assert task.priority == "low"
+    assert task.priority == True
+
 def test_sort_by_priority_orders_correctly():
     t1 = TaskFactory.create("Low task", "low")
     t2 = TaskFactory.create("High task", "high")
