@@ -28,5 +28,4 @@ jobs:
       - name: Run tests
         run: |
           cd app2-layered
-          pip install pytest
           test_tasks.py -v
